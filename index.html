@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мой Первый Сайт</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f0f0f0;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        header {
+            background: #4CAF50;
+            color: white;
+            padding: 2rem 1rem;
+        }
+        main {
+            padding: 2rem;
+        }
+        button {
+            padding: 1rem 2rem;
+            font-size: 1rem;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        footer {
+            margin-top: 2rem;
+            padding: 1rem;
+            background: #ddd;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Добро пожаловать на мой сайт!</h1>
+        <p>Это простой одностраничный сайт на HTML и CSS</p>
+    </header>
+
+    <main>
+        <p>Нажми на кнопку, чтобы увидеть сообщение:</p>
+        <button onclick="showMessage()">Нажми меня</button>
+        <p id="message" style="margin-top: 1rem; font-weight: bold;"></p>
+    </main>
+
+    <footer>
+        &copy; 2025 Мой Сайт
+    </footer>
+
+    <script>
+        function showMessage() {
+            document.getElementById('message').textContent = 'Привет! Ты нажал на кнопку!';
+        }
+    </script>
+
+</body>
+</html>
+
